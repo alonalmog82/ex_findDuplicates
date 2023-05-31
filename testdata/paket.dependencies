@@ -1,0 +1,79 @@
+source https://api.nuget.org/v3/index.json
+source http://nuget.gigya.net/nugetForVS/nuget/
+
+framework: net451
+redirects: on
+content: once
+copy_content_to_output_dir: always
+
+
+# Interfaces
+nuget OpenIdRPService.Interface 1.1.1
+nuget PolicyService.Interface 1.4.2
+nuget SamlSpService.Interface 1.1.0
+nuget SessionService.Interface ~> 3
+nuget JWTService.Interface 1.1.0
+nuget SitesService.Interface
+nuget TFAProvidersService.Interface 1.1.1.12
+nuget TokenService.Interface 1.7.14
+nuget UserIdService.Interface 3.0.11
+nuget PartnersService.Interface
+nuget UserManagement.Interface 2.27.1
+nuget IndigoService.Interface 1.0.0
+nuget UserService.Interface 1.0.4
+
+# GigyaInfra
+nuget Gigya.Common.Application.Ninject ~> 5
+nuget Gigya.MySql.Client ~> 5
+nuget Gigya.Tests.Utils ~> 5
+nuget Gigya.Common.Contracts >= 2.7
+
+# AspNetCore 
+nuget Microsoft.AspNetCore.Buffering ~> 0.2
+nuget Microsoft.AspNetCore.Diagnostics ~> 1
+nuget Microsoft.AspNetCore.Server.Kestrel.Https ~> 1
+nuget Microsoft.Extensions.Logging.Console ~> 1
+nuget Microsoft.AspNetCore.Http ~> 1
+nuget Microsoft.AspNetCore.Hosting ~> 1
+nuget Microsoft.AspNetCore.Http.Abstractions ~> 1
+nuget Microsoft.AspNetCore.Http.Extensions ~> 1
+nuget Microsoft.Extensions.Primitives ~> 1
+nuget Microsoft.Net.Http.Headers ~> 1
+nuget Microsoft.AspNetCore.Diagnostics.Abstractions ~> 1
+nuget Microsoft.AspNetCore.Hosting.Abstractions  ~> 1
+nuget Microsoft.AspNetCore.Hosting.Server.Abstractions  ~> 1
+nuget Microsoft.AspNetCore.Http.Features ~> 1
+nuget Microsoft.AspNetCore.Server.Kestrel  ~> 1
+nuget Microsoft.AspNetCore.WebUtilities ~> 1
+nuget Microsoft.Extensions.Configuration ~> 1
+nuget Microsoft.Extensions.Configuration.Abstractions ~> 1 
+nuget Microsoft.Extensions.Configuration.EnvironmentVariables ~> 1
+nuget Microsoft.Extensions.DependencyInjection ~> 1
+nuget Microsoft.Extensions.DependencyInjection.Abstractions ~> 1
+nuget Microsoft.Extensions.FileProviders.Abstractions ~> 1
+nuget Microsoft.Extensions.FileProviders.Physical ~> 1
+nuget Microsoft.Extensions.Logging ~> 1
+nuget Microsoft.Extensions.ObjectPool ~> 1
+nuget Microsoft.Extensions.Options ~> 1
+
+# Microsoft 
+nuget System.Net.Http.Formatting
+nuget Microsoft.Extensions.Logging.Abstractions ~> 1
+
+# Other 
+nuget JetBrains.Annotations
+nuget Polly ~> 5.0
+nuget AWSSDK 2.3.55.2
+nuget EnyimMemcached 
+nuget System.ValueTuple
+nuget System.Net.Http
+nuget AsyncIO.DotNet
+
+# Testing
+nuget System.Reactive.Core ~> 3
+nuget System.Reactive.Interfaces ~> 3
+nuget RichardSzalay.MockHttp
+nuget Shouldly
+nuget NSubstitute ~> 3.0
+
+nuget LiteFlowsService.Interface
